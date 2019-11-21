@@ -1,0 +1,27 @@
+// Default variables.
+@import "variables";
+
+html {
+  font-size: 14px;
+}
+body {
+  background-color: $body-bg-color;
+  color: $body-color;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.live-diagram {
+  margin: 219px auto 0;
+  width: 1000px;
+  .back-circle {
+    // background-color: #aaa;
+    border-radius: 50%;
+    height: 815px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    width: 815px;
+  }
+}
+
+// Blocks
+@import 'block/segment';

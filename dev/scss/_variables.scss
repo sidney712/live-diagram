@@ -1,0 +1,74 @@
+/**
+ * Default Variables.
+ */
+
+/** Color palette **/
+$navy: #001f3f;
+$blue: #0074d9;
+$aqua: #7fdbff;
+$teal: #39cccc;
+$olive: #3d9970;
+$green: #2ecc40;
+$lime: #01ff70;
+$yellow: #ffdc00;
+$orange: #ff851b;
+$red: #ff4136;
+$maroon: #85144b;
+$fuchsia: #f012be;
+$purple: #b10dc9;
+$black: #111;
+$gray: #aaa;
+$silver: #ddd;
+
+$salmon: #fa7c92;
+$rain: #6ec4db;
+$buttermilk: #fff7c0;
+$leaf: #66ab8c;
+
+$colour-maize: #fff05a;
+$colour-purple-navy: #4e598c;
+$colour-white: #fff;
+$colour-rajah: #fcaf58;
+$colour-mango-tango: #ff8c42;
+
+
+/** Color **/
+$body-bg-color: #f9f9f9;
+$body-color: #555;
+
+$header-nav-bg: $colour-purple-navy;
+
+$button-primary-bg-color: $colour-mango-tango;
+$button-primary-hover-bg-color: $colour-rajah;
+
+$menu-bg-color: $colour-mango-tango;
+$menu-color: $body-color;
+
+$tile-bg-color: $colour-white;
+
+$link-color: lighten($header-nav-bg, 15%);
+$link-hover-color: $button-primary-bg-color;
+
+/** Font **/
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap&subset=cyrillic,cyrillic-ext');
+$font-menu: 'Oswald', sans-serif;
+// @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i&display=swap');
+// $logo-font: 'Josefin Sans', sans-serif;
+// @import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext');
+// $logo-font2: 'Montserrat Alternates', sans-serif;
+
+/** Shadow **/
+$menu-box-shadow: 0 1px 3px rgba(0,0,0,.15), 0 2px 2px rgba(0,0,0,.07), 0 0 2px rgba(0,0,0,.09);
+$tile-box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 2px 2px rgba(0,0,0,.06), 0 0 2px rgba(0,0,0,.07);
+
+/** Border **/
+$tile-border: 1px solid #dee2e6;
+$tile-border-radius: 3px;
+
+/** Mixin **/
+@mixin container-box($padding-values) {
+  background-color: $tile-bg-color;
+  border-radius: $tile-border-radius;
+  box-shadow: $tile-box-shadow;
+  padding: #{$padding-values};
+}
