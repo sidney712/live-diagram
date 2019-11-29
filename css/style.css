@@ -20,7 +20,7 @@ body {
   margin: 200px auto 0;
   width: 1000px; }
   .live-diagram .diagram-disk {
-    background-color: #fff;
+    background-color: transparent;
     background-image: radial-gradient(closest-side, transparent, transparent 50%, rgba(255, 255, 255, 0.12) 70%, rgba(255, 255, 255, 0.4)), conic-gradient(from 270deg, #ff811f 45deg, #9000d8 45deg 135deg, #0d77cd 135deg 180deg, transparent 180deg);
     border-radius: 50%;
     height: 816px;
@@ -44,6 +44,7 @@ body {
         background-image: linear-gradient(310deg, #ee5bbc 0%, #ee5bbc 60%, #ff3786 80%, #ff3786 100%);
         border-left: 2px solid rgba(255, 255, 255, 0.45);
         border-top: 2px solid rgba(255, 255, 255, 0.45);
+        box-shadow: -40px -50px 30px -40px rgba(0, 0, 0, 0.5);
         content: '';
         height: 408px;
         left: 84px;
@@ -70,9 +71,12 @@ body {
           left: 117px;
           top: 379px;
           transform: rotateZ(21deg); }
+      .live-diagram .diagram-disk .outer-sector:first-child {
+        z-index: 2; }
       .live-diagram .diagram-disk .outer-sector:nth-child(2) {
         height: 434px;
-        transform: rotateZ(224.75deg); }
+        transform: rotateZ(224.75deg);
+        z-index: 1; }
         .live-diagram .diagram-disk .outer-sector:nth-child(2)::after {
           background-image: linear-gradient(310deg, #9dce46 0%, #9dce46 60%, #7bcc62 80%, #7bcc62 100%);
           top: 257px;
@@ -93,5 +97,15 @@ body {
             left: 168px;
             top: 390px;
             transform: rotateZ(15deg); }
+    .live-diagram .diagram-disk .central-disk {
+      background-color: transparent;
+      background-image: radial-gradient(closest-side, #dbd8ed, #dbd8ed calc(50% - 8px), #aba8c1 50%, rgba(255, 255, 255, 0.8) calc(50% + 1px), rgba(255, 255, 255, 0.8) calc(50% + 7px), rgba(255, 255, 255, 0.1) calc(50% + 8px), rgba(255, 255, 255, 0.15) calc(100% - 6px), transparent calc(100% - 5px), transparent), linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.35) 15%, rgba(255, 255, 255, 0.15) 25%, transparent 35%, rgba(0, 0, 0, 0.15) 50%, transparent 50%, transparent);
+      border-radius: 50%;
+      height: 508px;
+      left: calc(50% - 508px / 2);
+      position: absolute;
+      top: calc(50% - 508px / 2);
+      width: 508px;
+      z-index: 10; }
 
 /*# sourceMappingURL=style.css.map */
